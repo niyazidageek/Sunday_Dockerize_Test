@@ -1,0 +1,93 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 8080
+      published: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 50000
+      published: 50000
+      protocol: tcp
+    privileged: true
+    user: root
+    volumes:
+    - type: bind
+      source: /Users/niyazibabayev/jenkins
+      target: /var/jenkins_home
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /usr/local/bin/docker
+      target: /usr/local/bin/docker
+      bind:
+        create_host_path: true
+  mssql:
+    environment:
+      ACCEPT_EULA: "1"
+      MSSQL_SA_PASSWORD: MyPass@word
+      MSSQL_USER: sa
+    image: mcr.microsoft.com/azure-sql-edge
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: 1433
+      protocol: tcp
+  sunday_test_api:
+    build:
+      context: /Users/niyazibabayev/Projects/Sunday_Test_API
+      dockerfile: Sunday_Test_API/Dockerfile
+    depends_on:
+      mssql:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      Database: SundayDb
+      DbPort: "1433"
+      DbServer: mssql
+      DbUser: sa
+      Password: MyPass@word
+    image: sundaytestapi
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: 8090
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /Users/niyazibabayev/.aspnet/https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/niyazibabayev/.microsoft/usersecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  backend:
+    name: dockercompose4331238603339208060_backend
+    driver: bridge
+  default:
+    name: dockercompose4331238603339208060_default

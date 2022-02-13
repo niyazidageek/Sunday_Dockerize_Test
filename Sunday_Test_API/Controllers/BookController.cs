@@ -30,7 +30,7 @@ namespace Sunday_Test_API.Controllers
             var booksDb = await _bookService.GetBooksAsync();
 
             if (booksDb is null)
-                return NotFound();
+                return NotFound("Notfound!");
 
             var booksDto = _mapper.Map<List<BookDto>>(booksDb);
 
