@@ -1,0 +1,1 @@
+/Users/niyazibabayev/Projects/Sunday_Test_API/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache

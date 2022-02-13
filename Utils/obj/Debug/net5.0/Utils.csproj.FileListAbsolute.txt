@@ -1,0 +1,12 @@
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/bin/Debug/net5.0/Utils.deps.json
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/bin/Debug/net5.0/Utils.dll
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/bin/Debug/net5.0/ref/Utils.dll
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/bin/Debug/net5.0/Utils.pdb
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.csproj.AssemblyReference.cache
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.AssemblyInfoInputs.cache
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.AssemblyInfo.cs
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.csproj.CoreCompileInputs.cache
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.dll
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/ref/Utils.dll
+/Users/niyazibabayev/Projects/Sunday_Test_API/Utils/obj/Debug/net5.0/Utils.pdb
