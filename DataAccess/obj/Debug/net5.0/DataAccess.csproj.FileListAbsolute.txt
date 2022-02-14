@@ -1,4 +1,6 @@
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.deps.json
+/Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.runtimeconfig.json
+/Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.runtimeconfig.dev.json
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.dll
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/ref/DataAccess.dll
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.pdb
@@ -15,6 +17,4 @@
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/obj/Debug/net5.0/DataAccess.dll
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/obj/Debug/net5.0/ref/DataAccess.dll
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/obj/Debug/net5.0/DataAccess.pdb
-/Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.runtimeconfig.json
-/Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/bin/Debug/net5.0/DataAccess.runtimeconfig.dev.json
 /Users/niyazibabayev/Projects/Sunday_Test_API/DataAccess/obj/Debug/net5.0/DataAccess.genruntimeconfig.cache
