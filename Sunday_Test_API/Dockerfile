@@ -16,7 +16,6 @@ COPY ["Utils/Utils.csproj", "Utils/"]
 RUN dotnet restore "Sunday_Test_API/Sunday_Test_API.csproj"
 COPY . ./
 WORKDIR "/src/Sunday_Test_API"
-
 RUN chmod +x wait-for-it.sh
 
 RUN dotnet build "Sunday_Test_API.csproj" -c Release -o /app/build

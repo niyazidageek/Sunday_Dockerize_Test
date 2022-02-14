@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Sunday__Test__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Sunday_Test_API/Dockerfile">
     <Files>
-      <File FileName="Sunday_Test_API/Dockerfile" Line="18" Column="31" />
-      <File FileName="docker-compose.yml" Line="19" Column="16" />
+      <File FileName="Sunday_Test_API/Dockerfile" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
