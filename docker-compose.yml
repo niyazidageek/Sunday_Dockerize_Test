@@ -17,6 +17,7 @@ services:
       - mssql
     networks:
       - backend
+    command: ["Sunday_Test_API/wait-for.sh", "mssql:1433","dotnet", "Sunday_Test_API.dll"]
     build:
       context: .
       dockerfile: Sunday_Test_API/Dockerfile

@@ -1,29 +1,26 @@
 ﻿<Properties StartupConfiguration="{44D09F0A-885B-4D4F-9ECB-DEC24A713EE1}|Default">
   <MonoDevelop.Ide.ItemProperties.Sunday__Test__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sunday_Test_API/Dockerfile">
     <Files>
       <File FileName="Business/Abstract/IBookService.cs" Line="14" Column="44" />
       <File FileName="Business/Concrete/BookService.cs" />
-      <File FileName="Sunday_Test_API/Startup.cs" Line="48" Column="155" />
+      <File FileName="Sunday_Test_API/Startup.cs" />
       <File FileName="Business/Concrete/DatabaseManagementService.cs" />
       <File FileName="DataAccess/Identity/DataInitializer.cs" />
       <File FileName="Core/Repository/EFRepositoryBase/EFRepositoryBase.cs" />
       <File FileName="Sunday_Test_API/Program.cs" />
       <File FileName="DataAccess/Concrete/AppDbContext.cs" />
-      <File FileName="Sunday_Test_API/Dockerfile" Line="15" Column="30" />
-      <File FileName="docker-compose.yml" Line="9" Column="1" />
+      <File FileName="Sunday_Test_API/Dockerfile" Line="25" Column="44" />
+      <File FileName="docker-compose.yml" Line="19" Column="16" />
       <File FileName="DataAccess/Identity/Roles.cs" />
       <File FileName="Sunday_Test_API/Controllers/BookController.cs" />
-      <File FileName="Sunday_Test_API/wait-for-it.sh" Line="38" Column="13" />
-      <File FileName=".dockerignore" Line="1" Column="1" />
+      <File FileName=".dockerignore" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Sunday_Test_API" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" selected="True" />
-            </Node>
+          <Node name="Sunday_Test_API" expanded="True" selected="True">
+            <Node name="docker-compose" expanded="True" />
             <Node name="Sunday_Test_API" expanded="True" />
           </Node>
         </State>
