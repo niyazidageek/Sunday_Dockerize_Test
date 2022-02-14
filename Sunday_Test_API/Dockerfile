@@ -4,7 +4,6 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-
 WORKDIR /src
 COPY ["Sunday_Test_API/Sunday_Test_API.csproj", "Sunday_Test_API/"]
 COPY ["DataAccess/DataAccess.csproj", "DataAccess/"]
