@@ -4,6 +4,7 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+
 WORKDIR /src
 COPY ["Sunday_Test_API/Sunday_Test_API.csproj", "Sunday_Test_API/"]
 COPY ["DataAccess/DataAccess.csproj", "DataAccess/"]
@@ -13,11 +14,10 @@ COPY ["Business/Business.csproj", "Business/"]
 COPY ["Utils/Utils.csproj", "Utils/"]
 
 RUN dotnet restore "Sunday_Test_API/Sunday_Test_API.csproj"
-COPY . .
+COPY . ./
 WORKDIR "/src/Sunday_Test_API"
 
-
-RUN chmod +x wait-for.sh
+RUN chmod +x wait-for-it.sh
 
 RUN dotnet build "Sunday_Test_API.csproj" -c Release -o /app/build
 

@@ -1,35 +1,4 @@
 services:
-  jenkins:
-    image: niyazidocker/jenkinswithdocker
-    networks:
-      default: null
-    ports:
-    - mode: ingress
-      target: 8080
-      published: 8080
-      protocol: tcp
-    - mode: ingress
-      target: 50000
-      published: 50000
-      protocol: tcp
-    privileged: true
-    user: root
-    volumes:
-    - type: bind
-      source: /Users/niyazibabayev/jenkins
-      target: /var/jenkins_home
-      bind:
-        create_host_path: true
-    - type: bind
-      source: /var/run/docker.sock
-      target: /var/run/docker.sock
-      bind:
-        create_host_path: true
-    - type: bind
-      source: /usr/local/bin/docker
-      target: /usr/local/bin/docker
-      bind:
-        create_host_path: true
   mssql:
     environment:
       ACCEPT_EULA: "1"
@@ -50,6 +19,14 @@ services:
     depends_on:
       mssql:
         condition: service_started
+    entrypoint:
+    - wait-for-it.sh
+    - mssql:1433
+    - -t
+    - "120"
+    - --
+    - dotnet
+    - Sunday_Test_API.dll
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
@@ -89,5 +66,3 @@ networks:
   backend:
     name: dockercompose4331238603339208060_backend
     driver: bridge
-  default:
-    name: dockercompose4331238603339208060_default
