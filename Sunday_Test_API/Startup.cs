@@ -45,7 +45,7 @@ namespace Sunday_Test_API
             var database = Configuration["Database"] ?? "SundayDb";
 
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer($"Server={server}, {port};Initial Catalog={database};User ID={user};Password={password}"));
+                options.UseSqlServer($"Server={server}, {port};Initial Catalog={database};User ID={user};Password={password}; TrustServerCertificate=True; Connect Timeout=100"));
 
             services.AddIdentity<AppUser, IdentityRole>(options => {
                 options.Tokens.PasswordResetTokenProvider = TokenOptions.DefaultEmailProvider;
