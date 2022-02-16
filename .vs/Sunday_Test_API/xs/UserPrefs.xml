@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{44D09F0A-885B-4D4F-9ECB-DEC24A713EE1}|Default">
   <MonoDevelop.Ide.ItemProperties.Sunday__Test__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sunday_Test_API/Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sunday_Test_API/Startup.cs">
     <Files>
-      <File FileName="Sunday_Test_API/Dockerfile" Line="13" Column="38" />
+      <File FileName="Sunday_Test_API/Dockerfile" Line="23" Column="1" />
+      <File FileName="Sunday_Test_API/Startup.cs" Line="48" Column="177" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
             <Node name="docker-compose" expanded="True" />
             <Node name="Sunday_Test_API" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Dockerfile" selected="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
