@@ -20,6 +20,7 @@ RUN chmod +x wait-for-it.sh
 RUN dotnet build "Sunday_Test_API.csproj" -c Release -o /app/build
 
 FROM build AS publish
+
 RUN dotnet publish "Sunday_Test_API.csproj" -c Release -o /app/publish
 
 FROM base AS final
