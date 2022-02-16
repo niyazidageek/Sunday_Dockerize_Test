@@ -60,7 +60,7 @@ namespace Sunday_Test_API
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Test API",
+                    Title = "Test API for Dockerizing",
                     Description = "Test"
                 });
             });
